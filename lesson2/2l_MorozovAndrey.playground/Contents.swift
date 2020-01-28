@@ -4,10 +4,10 @@ let number = 12
 
 func checkOddEven() {
     if number % 2 == 0 {
-     print("1. It is even number.")
-} else {
-    print("1. It is odd number.")
-}
+        print("1. It is even number.")
+    } else {
+        print("1. It is odd number.")
+    }
 }
 
 checkOddEven()
@@ -15,7 +15,7 @@ checkOddEven()
 
 func devideThreeWoRem() {
     if number % 3 == 0 {
-         print("\n2. This number is divisible by 3.")
+        print("\n2. This number is divisible by 3.")
     } else {
         print("\n2. This number is not divisible by 3.")
     }
@@ -26,7 +26,7 @@ devideThreeWoRem()
 
 var array = [Int]()
 
-    for i in 1...100 {
+for i in 1...100 {
     array.append(i)
 }
 print("\n3. Array of 100 numbers: \(array)")

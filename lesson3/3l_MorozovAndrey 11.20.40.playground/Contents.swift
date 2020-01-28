@@ -64,12 +64,12 @@ struct PassengerCars {
     func printfiledTankVolume() {
         print(" And can be filled more: \(fuelTankVolume - filedTankVolume) l.")
     }
-    func fillFuel(n: Int) {
-        if car1.fuelTankVolume < n + car1.filedTankVolume  {
-                print("The maximum amount that you can fill the gas tank is \(car1.fuelTankVolume - car1.filedTankVolume) l.")
+    mutating func fillFuel(n: Int) {
+        if fuelTankVolume < n + filedTankVolume  {
+                print("The maximum amount that you can fill the gas tank is \(fuelTankVolume - filedTankVolume) l.")
         } else {
-            car1.filedTankVolume = n + car1.filedTankVolume
-                print("Now the amount of fuel in the gas tank: \(car1.filedTankVolume)")
+            filedTankVolume = n + filedTankVolume
+                print("Now the amount of fuel in the gas tank: \(filedTankVolume)")
         }
     }
     func printCar() {
@@ -132,12 +132,12 @@ struct Trucks {
     func printfiledTankVolume() {
         print(" and can be filled more: \(fuelTankVolume - filedTankVolume) l.")
 }
-    func fillFuel(n: Int) {
-        if car1.fuelTankVolume < n + car1.filedTankVolume  {
-                print("The maximum amount that you can fill the gas tank is \(car1.fuelTankVolume - car1.filedTankVolume) l.")
+    mutating func fillFuel(n: Int) {
+        if fuelTankVolume < n + filedTankVolume  {
+                print("The maximum amount that you can fill the gas tank is \(fuelTankVolume - filedTankVolume) l.")
         } else {
-            car1.filedTankVolume = n + car1.filedTankVolume
-                print("Now the amount of fuel in the gas tank: \(car1.filedTankVolume)")
+            filedTankVolume = n + filedTankVolume
+                print("Now the amount of fuel in the gas tank: \(filedTankVolume)")
         }
     }
     func printCar() {
